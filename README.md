@@ -22,3 +22,5 @@ php -S localhost:8080
 - <a href="#" target="_blank">FÁBIO HENRIQUE AMORIM DOS SANTOS</a>
 - <a href="#" target="_blank">GUSTAVO ALVES DA SILVA</a>
 - <a href="https://www.linkedin.com/in/davi-akio-lima-yogue-0263a0291/" target="_blank">DAVI AKIO LIMA YOGUE</a>
+- <a href="#" target="_blank">GLUCAS MIGUEL MARTINS</a>
+- <a href="#" target="_blank">GRUBENS FRANCISCO ALENCAR SILVA</a>
