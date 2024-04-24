@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-padrao:#ff523b;
+    --cor-padrao-hover:#f3b2e5;
+    --cor-fonte:#fff;
+    --cor-fonte-p:#555;
+    --cor-btn:#563434;
+    --cor-btn-hover:#15ff00;
+    --cor-btn-fonte:#000;
+    --cor-fonte-corpo:#555;
+    --cor-fonte-corpo-leve:#777;
+    --cor-stride:#5669C1;
+    
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+     
+}
+/*----------------BANNER---------------*/
+.banner{
+    background-color: #5669C1;
+}
+
+.banner .Linha{
+    margin-top: 70px;
+}
+
+/*----------------CONTAINER---------------*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*---------------NAVBAR---------------*/
+.navbar{
+    display:flex;
+    align-items: center ;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+/*----------------BANNER---------------*/
+.banner p{
+    color: var(--cor-fonte);
+}
+p{
+    color: var(--cor-fonte-p);
+}
+.linha{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis:50%;
+    min-width:300px;
+
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+.col-2 p{
+    font-weight: 600;
+    color:var(--cor-btn-fonte);
+}
+.btn{
+    text-decoration: none;
+    color:var(--cor-fonte);
+    background: blue;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:var(--cor-btn-hover);
+    color:var(--cor-btn-fonte)
+}
+
+/*----------------CATEGORIAS---------------*/
+.categorias{
+    margin: 70 px;
+    margin-top: 30px;
+}
+.corpo-categorias{
+    max-width: 880px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3{
+    flex-basis: 30%;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.col-4{
+    flex-basis: 25%;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4:hover{
+    transform: scale(1.1);
+}
+.col-4 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.titulo{
+    position: relative;
+    line-height: 60px;
+    margin: 0 auto 80px;
+    text-align: center;
+    color: var(--cor-fonte-corpo);
+
+}
+.titulo::after{
+    content: '';
+    background-color: var(--cor-padrao);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: var(--cor-fonte-corpo);
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.classificacao ion-icon{
+    color: var(--cor-padrao);
+}
+
+/*----------------OFERTAS---------------*/
+.ofertas{
+  background-color: #5669C1;
+  margin-top: 80px;
+  padding: 30 px 0;
+}
+.col-2 h1{
+    color:aliceblue;
+}
+.col-2 oferta-img{
+    padding: 50px;
+}
+small{
+    font-size:  20px;
+}
+
+/*----------------DEPOIMENTOS---------------*/
+.depoimentos{
+    padding-top: 100px;
+
+}
+.depoimentos .col-3{
+text-align: center;
+padding: 40px20;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: transform 0.5s;
+}
+.depoimentos .col-3:hover{
+    transform: scale(1.1);
+}
+.depoimentos .col-3 img{
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 2px solid var(--cor-stride)
+}
+.depoimento-icone{
+    font-size: 34px;
+    color: var(--cor-stride)
+
+}
+.col-3 p{
+    font-size: 13px;
+    color: var(--cor-fonte-corpo-leve);
+    margin:12px;
+}
+.depoimentos .col-3 h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-fonte-corpo-leve);
+}
+/*----------------MARCAS---------------*/
+
+.marcas{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0%);
+}
+
+/*----------------RODAPE---------------*/
+.rodape{
+    background: var(--cor-btn-fonte);
+    color: var(--cor-fonte);
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.rodape p{
+    color:var(--cor-fonte)
+}
+.rodape h3{
+    color: var(--cor-fonte);
+    margin-bottom: 20px;
+}
+.rodape-col-1, .rodape-col-2, .rodape-col-3, .rodape-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.rodape-col-1{
+    flex-basis: 30%;
+}
+.rodape-col-2{
+    flex: 1;
+    text-align: center;
+}
+.rodape-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.rodape-col-3, .rodape-col-4{
+    flex-basis: 12%;
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+}
+app.logo{
+    margin-top: 20px;
+}
+app.logo img{
+    width: 140px;
+}
+.rodape hr{
+    border: none;
+    height: 1px;
+    background: var(--cor-fonte);
+    margin: 20px 0;
+}
+.direitos{
+    text-align: center;
+}
+.menu-celular{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*----------------MENU CELULAR---------------*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+        margin-right: 50px;
+        margin-top: 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .menu-celular{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .linha{
+        text-align: center;
+
+    }
+    .col-2,.col-3, .col-4 {
+        flex-basis: 100%;
+    }
+    .col-2 h1{
+        font-size: 27px;
+    }
+    .rodape-col-3, .rodape-col-4{
+        text-align: center;
+    }
+    .col-4 p{
+        font-size: 24px;
+    }
+        
+
+
+
+}
