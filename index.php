@@ -2,6 +2,8 @@
 
 <?php require_once __DIR__ . '/includes/site/banner.php'; ?>
 
+<?php $produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos LIMIT 4'); ?>
+
 <!-- INICIO DAS CATEGORIAS EM DESTAQUE STRIDE.COM.BR -->
 <div class="categorias">
     <!-- INICIO CORPO CATEGORIAS EM DESTAQUE STRIDE.COM.BR -->
@@ -28,62 +30,9 @@
 <div class="corpo-categorias">
     <h2 class="titulo">Nossos Produtos</h2>
     <div class="linha">
-        <!-- INICIO ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <div class="col-4">
-            <img src="assets/img/air-jordan.png" alt="">
-            <h4>Jordan Orange</h4>
-            <div class="classificacao">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 1500,00</p>
-        </div>
-        <!-- FIM ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <!-- INICIO ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <div class="col-4">
-            <img src="assets/img/vans_kn.webp" alt="">
-            <h4>Vans Kn Su skool-Azul e Preto</h4>
-            <div class="classificacao">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 699,90</p>
-        </div>
-        <!-- FIM ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <!-- INICIO ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <div class="col-4">
-            <img src="assets/img/nmd_produto.png" alt="">
-            <h4>Adidas NMD-Cinza</h4>
-            <div class="classificacao">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 1100,00</p>
-        </div>
-        <!-- FIM ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <!-- INICIO ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-        <div class="col-4">
-            <img src="assets/img/puma_suede.png" alt="">
-            <h4>Puma Suede-verde</h4>
-            <div class="classificacao">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 530,00</p>
-        </div>
-        <!-- FIM ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
+        <?php foreach ($produtos as $produto): ?>
+            <?php require __DIR__ . '/includes/site/card.php'; ?>
+        <?php endforeach; ?>
     </div>
 </div>
 <!-- FIM PRODUTOS EM DESTAQUE STRIDE.COM.BR -->

@@ -28,7 +28,7 @@
         <tr>
             <td><?= $produto->id ?></td>
             <td>
-             <?php if ($produto->imagem): ?>
+                <?php if ($produto->imagem): ?>
                     <img src="<?= url('assets/uploads/' . $produto->imagem) ?>" alt="<?= $produto->nome ?>" width="50" height="50" class="rounded border m-2">
                 <?php else: ?>
                     <img src="<?= url('assets/default-product.webp') ?>" alt="<?= $produto->nome ?>" height="50" class="rounded border m-2">

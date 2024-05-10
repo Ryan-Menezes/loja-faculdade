@@ -73,9 +73,11 @@ p{
 }
 .linha{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.linha a {
+    text-decoration: none;
 }
 .col-2{
     flex-basis:50%;
@@ -304,6 +306,84 @@ app.logo img{
     margin-left: 20px;
     display: none;
 }
+
+.navbar-alone {
+    box-shadow: #ccc 0px 0px 5px 10px;
+}
+
+.navbar-alone a {
+    color: #000!important;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-alone .logo img {
+    max-width: 80px;
+    width: auto;
+}
+
+.navbar-alone nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-alone nav ul {
+    max-height: none;
+}
+
+.navbar .carrinho-item {
+    filter: brightness(0);
+}
+
+.product-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.product-page img {
+    max-width: 100%;
+}
+
+.product-page h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-page p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-page .price {
+    font-size: 18px;
+}
+
+.product-page .btn-add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5669C1;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.product-page .btn-add-to-cart:hover {
+    transform: scale(1.1);
+}
+
 /*----------------MENU CELULAR---------------*/
 @media only screen and (max-width:800px){
     nav ul{
