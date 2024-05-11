@@ -72,3 +72,11 @@ if (!function_exists('deleteFile')) {
         unlink($fullPath);
     }
 }
+
+if (!function_exists('redirectIfIsNotAuthenticated')) {
+    function redirectIfIsNotAuthenticated(): void {
+        if (!isset($_SESSION['auth-id'])) {
+            redirect('/admin/login.php');
+        }
+    }
+}

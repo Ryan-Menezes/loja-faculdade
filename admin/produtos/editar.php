@@ -1,4 +1,10 @@
-<?php require_once __DIR__ . '/../../includes/admin/header.php'; ?>
+<?php
+
+require_once __DIR__ . '/../../includes/admin/header.php';
+
+redirectIfIsNotAuthenticated();
+
+?>
 
 <?php
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);

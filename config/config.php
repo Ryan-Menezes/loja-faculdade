@@ -12,3 +12,5 @@ define('DB_CHARSET', 'utf8mb4');
 
 require_once __DIR__ . '/helpers.php';
 require_once __DIR__ . '/../src/Database.php';
+require_once __DIR__ . '/../src/CartItem.php';
+require_once __DIR__ . '/../src/Cart.php';

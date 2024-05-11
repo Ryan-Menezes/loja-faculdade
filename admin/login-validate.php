@@ -21,4 +21,6 @@ if (!password_verify($senha, $user->senha)) {
     ]);
 }
 
-$_SESSION['id'] = md5($user->id);
+$_SESSION['auth-id'] = md5($user->id);
+
+redirect('/admin/produtos');

@@ -1,4 +1,10 @@
-<?php require_once __DIR__ . '/../../includes/admin/header.php'; ?>
+<?php
+
+require_once __DIR__ . '/../../includes/admin/header.php';
+
+redirectIfIsNotAuthenticated();
+
+?>
 
 <?php $produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos'); ?>
 

@@ -1,4 +1,10 @@
-<?php require_once __DIR__ . '/../../includes/admin/header.php'; ?>
+<?php
+
+require_once __DIR__ . '/../../includes/admin/header.php';
+
+redirectIfIsNotAuthenticated();
+
+?>
 
 <div class="d-flex align-items-center justify-content-between pb-2 border-bottom my-5">
     <h1>Novo Produto</h1>
