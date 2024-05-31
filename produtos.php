@@ -2,7 +2,13 @@
 
 <?php require_once __DIR__ . '/includes/site/navbar.php'; ?>
 
-<?php $produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos'); ?>
+<?php
+
+use Src\Database;
+
+$produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos');
+
+?>
 
 <div class="corpo-categorias" style="margin: 40px auto">
     <div class="linha">

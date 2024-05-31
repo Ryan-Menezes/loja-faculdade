@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../../config/config.php';
 
+use Src\Database;
+
 redirectIfIsNotAuthenticated();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);

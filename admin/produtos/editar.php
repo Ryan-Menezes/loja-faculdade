@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../../includes/admin/header.php';
 
+use Src\Database;
+
 redirectIfIsNotAuthenticated();
 
 ?>

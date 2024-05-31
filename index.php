@@ -2,7 +2,13 @@
 
 <?php require_once __DIR__ . '/includes/site/banner.php'; ?>
 
-<?php $produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos LIMIT 4'); ?>
+<?php
+
+use Src\Database;
+
+$produtos = Database::EXECUTE_QUERY('SELECT * FROM produtos LIMIT 4');
+
+?>
 
 <!-- INICIO DAS CATEGORIAS EM DESTAQUE STRIDE.COM.BR -->
 <div class="categorias">

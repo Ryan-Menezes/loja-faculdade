@@ -80,3 +80,9 @@ if (!function_exists('redirectIfIsNotAuthenticated')) {
         }
     }
 }
+
+if (!function_exists('productImage')) {
+    function productImage(stdClass $product): string {
+        return $product->imagem ? url('assets/uploads/' . $product->imagem) : url('assets/default-product.webp');
+    }
+}

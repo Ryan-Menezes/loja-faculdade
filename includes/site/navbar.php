@@ -15,5 +15,5 @@
         </ul>
     </nav>
     <!-- FIM MENU NAVEGAÇÃO STRIDE.COM.BR -->
-    <a href="<?= url('/') ?>" title=""><img src="assets/img/carrinho.png" class="carrinho-item" alt="Carrinho" width="30px" height="30px"></a>
+    <a href="<?= url('/carrinho.php') ?>" title=""><img src="assets/img/carrinho.png" class="carrinho-item" alt="Carrinho" width="30px" height="30px"></a>
 </header>

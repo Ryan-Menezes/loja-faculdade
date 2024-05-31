@@ -1,10 +1,6 @@
 <!-- INICIO ITEM PRODUTO EM DESTAQUE STRIDE.COM.BR -->
-<a href="/produto.php?slug=<?= $produto->slug ?>" class="col-4">
-    <?php if ($produto->imagem): ?>
-        <img src="<?= url('assets/uploads/' . $produto->imagem) ?>" alt="<?= $produto->nome ?>" class="rounded border m-2">
-    <?php else: ?>
-        <img src="<?= url('assets/default-product.webp') ?>" alt="<?= $produto->nome ?>" class="rounded border m-2">
-    <?php endif; ?>
+<a href="<?= url('/produto.php?slug=' . $produto->slug) ?>" class="col-4">
+    <img src="<?= productImage($produto) ?>" alt="<?= $produto->nome ?>" class="rounded border m-2">
 
     <h4><?= $produto->nome ?></h4>
 

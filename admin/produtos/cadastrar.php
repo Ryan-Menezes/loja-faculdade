@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../../config/config.php';
 
+use Src\Database;
+
 redirectIfIsNotAuthenticated();
 
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);

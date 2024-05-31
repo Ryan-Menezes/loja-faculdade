@@ -1,5 +1,9 @@
 <?php
 
+namespace Src;
+
+use JsonSerializable;
+
 class CartItem implements JsonSerializable
 {
     private int $productId;
@@ -26,5 +30,10 @@ class CartItem implements JsonSerializable
     public function getQuantity(): int
     {
         return $this->quantity;
+    }
+
+    public function addQuantity(int $quantity): void
+    {
+        $this->quantity += $quantity;
     }
 }

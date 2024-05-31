@@ -21,7 +21,7 @@
             </ul>
         </nav>
         <!-- FIM MENU NAVEGAÇÃO STRIDE.COM.BR -->
-        <a href="<?= url('/') ?>" title=""><img src="assets/img/carrinho.png" alt="" width="30px" height="30px"></a>
+        <a href="<?= url('/carrinho.php') ?>" title=""><img src="assets/img/carrinho.png" alt="" width="30px" height="30px"></a>
 
         <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
     </div>

@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../config/config.php';
 
+use Src\Database;
+
 $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
 

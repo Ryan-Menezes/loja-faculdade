@@ -1,5 +1,10 @@
 <?php
 
+namespace Src;
+
+use PDO;
+use PDOException;
+
 class Database {
 	private static $conexao;
 
