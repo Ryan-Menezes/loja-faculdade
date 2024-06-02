@@ -21,7 +21,7 @@
             margin-top: 120px;
             max-width: 600px;
             border: 1px solid #9C9C9C;
-            background-color: #EAEAEA;  
+            background-color: #EAEAEA;
         }
 
         #login .container #login-row #login-column #login-box #login-form {
@@ -50,7 +50,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="senha" id="password" class="form-control">
+                                <input type="password" name="senha" id="password" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
